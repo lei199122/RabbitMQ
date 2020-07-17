@@ -1,0 +1,13 @@
+spring:
+  rabbitmq:
+    host: 139.129.252.208
+    port: 5672
+    username: reindex 
+    password: fH7MtSCKQeY
+
+    connection-timeout: 1000ms
+    #producer
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:      mandatory: true 
+  

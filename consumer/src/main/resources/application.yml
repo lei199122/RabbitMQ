@@ -1,0 +1,16 @@
+spring:
+  rabbitmq:
+    host: 139.129.252.208
+    port: 5672
+    username: reindex
+    password: fH7MtSCKQeY
+    connection-timeout: 1000ms
+    #consumer
+    listener:
+      simple:
+        acknowledge-mode: manual # auto:自动签收，manual，人工签收 none: 也就是auto 签收
+        concurrency: 1 
+        max-concurrency: 5
+server:
+  port: 8083
+    
